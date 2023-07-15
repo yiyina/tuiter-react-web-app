@@ -212,16 +212,22 @@
 }
 #tuit-check {
     width: 15px;
+    border-radius: 50%;
 }
 .wd-tuits-gray-text {
     color: gray;
 }
 .wd-tuits-bold-text {
     font-weight: bold;
+
 }
 /* right area */
 .wd-right-list img {
     width: 35px;
+}
+.wd-list-contents span {
+    position: relative;
+    z-index: 1;
 }
 .wd-right-icon-img {
     border-radius: 50%;
