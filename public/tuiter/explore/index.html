@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css">
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container wd-main">
+        <div class="row">
+            <!-- left-area -->
+            <div class="col col-sm-3 col-md-2 col-lg-2 wd-left-area">
+                <ul class="row wd-left-list">
+                    <li class="row">
+                        <a><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="row">
+                        <div class="d-flex">
+                            <a><i class="fas fa-home"></i></a>
+                            <span class="d-none d-xl-block">Home</span>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="d-flex">
+                            <a><i class="fas fa-search"></i></a>
+                            <span class="d-none d-xl-block">Explore</span>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="d-flex">
+                            <a><i class="fas fa-bell"></i></a>
+                            <span class="d-none d-xl-block">Notifications</span>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="d-flex">
+                            <a><i class="fas fa-envelope"></i></a>
+                            <span class="d-none d-xl-block">Messages</span>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="d-flex">
+                            <a><i class="fas fa-bookmark"></i></a>
+                            <span class="d-none d-xl-block">Bookmarks</span>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="d-flex">
+                            <a><i class="fas fa-list-ul"></i></a>
+                            <span class="d-none d-xl-block">Lists</span>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="d-flex">
+                            <a><i class="fas fa-user"></i></a>
+                            <span class="d-none d-xl-block">Profile</span>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="d-flex">
+                            <a><i class="fas fa-ellipsis-h"></i></a>
+                            <span class="d-none d-xl-block">More</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="row wd-tweet-button" >
+                    <div class="col-12 d-flex justify-content-center">
+                        <button class="btn btn-primary btn-twitter rounded-pill w-100">Tweet</button>
+                    </div>
+                </div>
+                <div class="d-block d-sm-none fa-2x">XS</div>
+                <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+                <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+                <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+                <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+                <div class="d-none d-xxl-block fa-2x">XXL</div>
+            </div>
+    
+            <!-- md-area -->
+            <div class="col col-sm-9 col-md-10 col-lg-6 wd-md-area">
+                <div class="row wd-md-search-bar">
+                    <div class="col-10" id="search-area">
+                        <i class="fas fa-search"></i>
+                        <input id="search-input" placeholder="Search Twitter">
+                    </div>
+                    <div class="col-2 wd-cog-container">
+                        <i class="fas fa-cog" id="cog-img"></i>
+                    </div>
+                </div>
+                <div class="row wd-md-tab-area">
+                    <ul class="nav nav-tabs" id="myTabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#tab1">For you</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab2">Trending</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab3">News</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab4">Sports</a>
+                          </li>
+                          <li class="nav-item d-sm-none d-md-block">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab5">Entertainment</a>
+                          </li>
+                    </ul>
+                </div>
+                <div class="row wd-md-img-area">
+                    <span>Hayao Miyazaki’s Final Film</span>
+                </div>
+                <!-- first item -->
+                <div class="row wd-md-items">
+                    <div class="col-9 wd-md-items-left">
+                        <div class="wd-tuits-gray-text">
+                            Web Development
+                        </div>
+                        <div class="wd-tuits-reference wd-tuits-bold-text">
+                            <span>ReactJS</span>
+                            <span>
+                                <img id="tuit-check" src="../../images/bookmarks-img/account-varify.jpg">
+                            </span>
+                            <span class="wd-tuits-gray-text">
+                                 - 2h
+                            </span>
+                        </div>
+                        <div class="wd-tuits-content wd-tuits-bold-text">
+                            React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
+                        </div>
+                        <div class="wd-tuits-gray-text wd-tuits-read-number"></div>
+                    </div>
+                    <div class="col-3 wd-md-items-right">
+                        <img src="../../images/explore-img/reactjs.jpg">
+                    </div>
+                </div>
+
+                <!-- second item -->
+                <div class="row wd-md-items">
+                    <div class="col-9 wd-md-items-left">
+                        <div class="wd-tuits-gray-text">
+                            
+                        </div>
+                        <div class="wd-tuits-reference wd-tuits-bold-text">
+                            <span>JavaScript</span>
+                            <span>
+                                <img id="tuit-check" src="../../images/bookmarks-img/account-varify.jpg">
+                            </span>
+                            <span class="wd-tuits-gray-text">
+                                 - 2h
+                            </span>
+                        </div>
+                        <div class="wd-tuits-content wd-tuits-bold-text">
+                            JavaScript is programming language that can run on browsers as well as desktops
+                        </div>
+                        <div class="wd-tuits-gray-text wd-tuits-read-number">
+                            123K Tweets
+                        </div>
+                    </div>
+                    <div class="col-3 wd-md-items-right">
+                        <img src="../../images/explore-img/javascript.jpg">
+                    </div>
+                </div>
+
+                <!-- Third item -->
+                <div class="row wd-md-items">
+                    <div class="col-9 wd-md-items-left">
+                        <div class="wd-tuits-gray-text">
+                            Web Development
+                        </div>
+                        <div class="wd-tuits-reference wd-tuits-bold-text">
+                            <span>jQuery</span>
+                        </div>
+                        <div class="wd-tuits-gray-text wd-tuits-read-number">
+                            123K Tweets
+                        </div>
+                    </div>
+                    <div class="col-3 wd-md-items-right">
+                        <img src="../../images/explore-img/jquery.jpg">
+                    </div>
+                </div>
+
+                <!-- fourth item -->
+                <div class="row wd-md-items">
+                    <div class="col-9 wd-md-items-left">
+                        <div class="wd-tuits-gray-text">
+                            Web Development
+                        </div>
+                        <div class="wd-tuits-reference wd-tuits-bold-text">
+                            <span>NodeJS</span>
+                            <span>
+                                <img id="tuit-check" src="../../images/bookmarks-img/account-varify.jpg">
+                            </span>
+                            <span class="wd-tuits-gray-text">
+                                 - 2h
+                            </span>
+                        </div>
+                        <div class="wd-tuits-gray-text wd-tuits-read-number">
+                            123K Tweets
+                        </div>
+                    </div>
+                    <div class="col-3 wd-md-items-right">
+                        <img src="../../images/explore-img/nodejs.jpg">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- right-area -->
+            <div class="col col-sm-0 col-md-0 col-lg-4 d-md-none d-lg-block wd-right-area">
+                <ul class="row wd-right-list">
+                    <li class="row wd-tuits-bold-text">
+                        Who to follow
+                    </li>
+                    <!-- first item -->
+                    <li class="row">
+                        <div class="d-flex wd-right-list-container">
+                            <div class="col-2">
+                              <img class="wd-right-icon-img" src="../../images/explore-img/java-icon.jpg" class="img-fluid" alt="Java Icon">
+                            </div>
+                            <div class="col-6">
+                                <span style="white-space: nowrap;">
+                                    <span class="wd-tuits-bold-text">Java</span>
+                                    <img id="tuit-check" src="../../images/bookmarks-img/account-varify.jpg" alt="Tuit Check">
+                                </span><br/>
+                                <span class="wd-tuits-gray-text">@Java</spa>
+                            </div>
+                            <div class="col-4">
+                              <button class="btn btn-primary btn-twitter rounded-pill w-100 btn-sm">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- second item -->
+                    <li class="row">
+                        <div class="d-flex wd-right-list-container">
+                            <div class="col-2">
+                              <img class="wd-right-icon-img" src="../../images/explore-img/relativityspace-icon.jpg" class="img-fluid" alt="Java Icon">
+                            </div>
+                            <div class="col-6">
+                                <span style="white-space: nowrap;">
+                                    <span class="wd-tuits-bold-text">Relativity Space</span>
+                                    <img id="tuit-check" src="../../images/bookmarks-img/account-varify.jpg" alt="Tuit Check">
+                                </span><br/>
+                                <span class="wd-tuits-gray-text">@relativityspace</spa>
+                            </div>
+                            <div class="col-4">
+                              <button class="btn btn-primary btn-twitter rounded-pill w-100 btn-sm">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- third item -->
+                    <li class="row">
+                        <div class="d-flex wd-right-list-container">
+                            <div class="col-2">
+                              <img class="wd-right-icon-img" src="../../images/explore-img/virgin-icon.jpg" class="img-fluid" alt="Java Icon">
+                            </div>
+                            <div class="col-6">
+                                <span style="white-space: nowrap;">
+                                    <span class="wd-tuits-bold-text">Virgin Galactic</span>
+                                    <img id="tuit-check" src="../../images/bookmarks-img/account-varify.jpg" alt="Tuit Check">
+                                </span><br/>
+                                <span class="wd-tuits-gray-text">@vergingalactic</spa>
+                            </div>
+                            <div class="col-4">
+                              <button class="btn btn-primary btn-twitter rounded-pill w-100 btn-sm">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- forth item -->
+                    <li class="row">
+                        <div class="d-flex wd-right-list-container">
+                            <div class="col-2">
+                              <img class="wd-right-icon-img" src="../../images/bookmarks-img/NASA-logo.jpg" class="img-fluid" alt="Java Icon">
+                            </div>
+                            <div class="col-6">
+                                <span style="white-space: nowrap;">
+                                    <span class="wd-tuits-bold-text">NASA</span>
+                                    <img id="tuit-check" src="../../images/bookmarks-img/account-varify.jpg" alt="Tuit Check">
+                                </span><br/>
+                                <span class="wd-tuits-gray-text">@NASA</spa>
+                            </div>
+                            <div class="col-4">
+                              <button class="btn btn-primary btn-twitter rounded-pill w-100 btn-sm">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- fifth item -->
+                    <li class="row">
+                        <div class="d-flex wd-right-list-container">
+                            <div class="col-2">
+                              <img class="wd-right-icon-img" src="../../images/explore-img/tesla-icon.jpg" class="img-fluid" alt="Java Icon">
+                            </div>
+                            <div class="col-6">
+                                <span style="white-space: nowrap;">
+                                    <span class="wd-tuits-bold-text">Tesla</span>
+                                    <img id="tuit-check" src="../../images/bookmarks-img/account-varify.jpg" alt="Tuit Check">
+                                </span><br/>
+                                <span class="wd-tuits-gray-text">@Tesla</spa>
+                            </div>
+                            <div class="col-4">
+                              <button class="btn btn-primary btn-twitter rounded-pill w-100 btn-sm">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
