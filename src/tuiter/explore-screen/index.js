@@ -14,8 +14,7 @@ function ExploreScreen() {
                        wd-nudge-up"/>
           </div>
           <div className="col-1">
-            <GoGear className="wd-top-4 float-end
-                       fs-3 position-relative"/>
+            <GoGear className="wd-top-4 float-end fs-3 position-relative"/>
           </div>
         </div>
         <ul className="nav nav-pills mb-2 mt-2">
