@@ -22,7 +22,7 @@ const NavigationSidebar = () => {
         {links.map((link) =>
             <Link to={`/tuiter/${link.name}`} className={`list-group-item text-capitalize ${active === link ? "active" : ""}`}>
               <FontAwesomeIcon icon={link.icon} className="me-2" />
-              {link.name}
+              <span className="d-none d-sm-inline">{link.name}</span>
             </Link>
         )}
       </div>
