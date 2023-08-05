@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "./tuits-reducer";
+// import { deleteTuit } from "./tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import TuitStats from "./tuit-stats";
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -23,9 +24,12 @@ const TuitItem = (
     }
 ) => {
   const dispatch = useDispatch();
-  const handleDelete = () => {
-    dispatch(deleteTuit(tuit._id));
-  };
+  // const handleDelete = () => {
+  //   dispatch(deleteTuit(tuit._id));
+  // };
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuitThunk(id));
+  }
 
   return(
       <li className="list-group-item">
@@ -45,7 +49,8 @@ const TuitItem = (
             <TuitStats tuit={tuit} />
           </div>
           <div className="col-1">
-            <FontAwesomeIcon icon={faTimes} onClick={handleDelete} color="gray" size="md" />
+            {/*<FontAwesomeIcon icon={faTimes} onClick={handleDelete} color="gray" size="md" />*/}
+            <FontAwesomeIcon icon={faTimes} onClick={() => deleteTuitHandler(tuit._id)} color="gray" size="md" />
           </div>
         </div>
       </li>

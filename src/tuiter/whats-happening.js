@@ -7,13 +7,13 @@ import {TbCalendarStats} from "react-icons/tb";
 import {HiOutlineLocationMarker} from "react-icons/hi";
 import {BiBold, BiItalic} from "react-icons/bi";
 
-import {createTuit} from "./tuits/tuits-reducer";
+// import {createTuit} from "./tuits/tuits-reducer";
+import {createTuitThunk} from "./services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
-
   const tuitClickHandler = () => {
     if (whatsHappening.trim() !== "") {
       const newTuit = {
@@ -30,8 +30,9 @@ const WhatsHappening = () => {
         likes: 0,
         handle: "@apple",
       };
-      dispatch(createTuit(newTuit));
-      setWhatsHappening("");
+      // dispatch(createTuit(newTuit));
+      // setWhatsHappening("");
+      dispatch(createTuitThunk(newTuit));
     };
   };
 
