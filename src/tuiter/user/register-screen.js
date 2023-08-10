@@ -3,36 +3,36 @@ import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { registerThunk } from "../services/auth-thunks";
 function RegisterScreen() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const handleRegister = async () => {
-    try {
-      await dispatch(registerThunk({ username, password }));
-      navigate("/tuiter/profile");
-    } catch (e) {
-      alert(e);
-    }
-  };
-  return (
-      <div>
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const handleregister = async () => {
+        try {
+            await dispatch(registerThunk({ username, password }));
+            navigate("/tuiter/profile");
+        } catch (e) {
+            alert(e);
+        }
+    };
+     return (
+        <div>
         <h1>Register Screen</h1>
         <div className="mt-2">
-          <label>Username</label>
-          <input className="form-control" type="text" value={username}
-                 onChange={(event) => setUsername(event.target.value)}/>
+        <label>Username</label>
+        <input className="form-control" type="text" value={username}
+        onChange={(event) => setUsername(event.target.value)}/>
         </div>
         <div className="mt-2">
-          <label>Password</label>
-          <input className="form-control" type="password" value={password}
-                 onChange={(event) => setPassword(event.target.value)}/>
+        <label>Password</label>
+        <input className="form-control" type="password" value={password}
+            onChange={(event) => setPassword(event.target.value)}/>
         </div>
         <button className="btn btn-primary mt-2"
-                onClick={handleRegister}>
-          Register
+                onClick={handleregister}>
+        Register
         </button>
-      </div>
-  );
+        </div>
+    );  
 }
 export default RegisterScreen;
