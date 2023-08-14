@@ -10,7 +10,7 @@ const TuitItem = (
     {
       tuit = {
         "topic": "Space",
-        "userName": "SpaceX",
+        "username": "SpaceX",
         "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
         "time": "2h",
         "image": "spacex.png",
@@ -39,7 +39,7 @@ const TuitItem = (
           </div>
           <div className="col-9">
             <div>
-              <span className="fw-bold">{tuit.userName}</span>
+              <span className="fw-bold">{tuit.username}</span>
               <img width={15} height={15} src='/images/bookmarks-img/account-varify.jpg' className="m-2"/>
               <span className="small text-muted">{tuit.handle}•{tuit.time}</span>
             </div>

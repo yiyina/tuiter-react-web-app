@@ -18,9 +18,10 @@ const WhatsHappening = () => {
     if (whatsHappening.trim() !== "") {
       const newTuit = {
         tuit: whatsHappening,
-        _id: Math.random().toString(),
+        // _id: Math.random().toString(),
         topic: "Space",
-        userName: "Apple",
+        username: "Apple",
+        handle: "@apple",
         title: "Your Title",
         time: "Just now",
         image: "apple.jpg",
@@ -28,7 +29,6 @@ const WhatsHappening = () => {
         replies: 0,
         retuits: 0,
         likes: 0,
-        handle: "@apple",
       };
       // dispatch(createTuit(newTuit));
       // setWhatsHappening("");
